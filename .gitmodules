@@ -1,0 +1,3 @@
+[submodule "themes/tailwind-durumi"]
+	path = themes/tailwind-durumi
+	url = https://github.com/team-durumi/tailwind-durumi
