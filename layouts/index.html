@@ -1,0 +1,6 @@
+{{ define "main" }}
+
+{{ $projects := partial "projects-data.html" . }}
+<ul>{{- range $projects -}}<li>{{ .client }}</li>{{- end -}}</ul>
+
+{{ end }}

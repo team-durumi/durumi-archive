@@ -1,0 +1,11 @@
+{{ $url := "https://docs.google.com/spreadsheets/d/e/2PACX-1vQVpXGnDO8H-ir-uIW-89ddAvNcQbk3kl7uJOFRcVpaZpSTBWyJdJ0F2N2ObUWyVWFpSj_pcm_qIdTA/pub?gid=0&single=true&output=csv" }}
+{{ $csv := getCSV "," $url }}{{ $keys := first 1 $csv }}{{ $rows := after 1 $csv }}
+<table>
+{{ range $row := $rows }}
+    <tr>
+        {{ range $column := $row }}
+        <td>{{ $column }}</td>
+        {{ end }}
+    </tr>
+{{ end }}
+</table>

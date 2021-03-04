@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main class="prose lg:prose-xl">
+    <h1>{{ .Params.title }}</h1>
+    <div class="flex flex-col">
+        <div class="max-w-lg bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="py-4 px-8 mt-3 bg-gray-100 rounded-lg">
+                <ul class="list-none">
+                    <li class="text-gray-500 text-base font-semibold">코드명: {{ .Params.codename }}</li>
+                    <li class="text-gray-500 text-base font-semibold">발주처: {{ .Params.client }}</li>
+                    <li class="text-gray-500 text-base font-semibold">시기: {{ .Params.opened_at }}</li>
+                </li>
+                <div class="py-4">
+                    <a target="_blank" href="{{ .Params.project_url }}" class="w-full btn btn-primary text-white">바로가기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        {{ .Content }}
+    </div>
+</main>
+{{ end }}

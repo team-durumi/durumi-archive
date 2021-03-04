@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-size: 14px;
-}
-
-@screen md {
-  html {
-    font-size: 16px;
-  }
+[data-theme='dark'] {
+  --d: 223 14% 10%;
+  --c1: 222 13% 19%;
+  --c2: 219 14% 28%;
+  --c3: 220 14% 37%;
+  --c4: 220 14% 46%;
+  --c5: 218 14% 65%;
+  --c6: 220 15% 84%;
+  --c7: 228 14% 93%;
+  --c8: 220 14% 96%;
+  --c9: 210 20% 98%;
 }

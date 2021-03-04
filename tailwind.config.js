@@ -1,5 +1,6 @@
 const theme = require('tailwindcss/defaultTheme');
 const typography = require('@tailwindcss/typography');
+const daisyui = require('daisyui');
 
 //const colorBrand = 'var(--color-pretty)';
 
@@ -21,8 +22,20 @@ module.exports = {
 				let els = JSON.parse(content).htmlElements;
 				els = els.tags.concat(els.classes, els.ids);
 				return els;
-			}
+			},
+			safelist: [ /data-theme$/ ]
 		}
 	},
-	plugins: [ typography ]
+	plugins: [ typography, daisyui ],
+	// OPTIONAL: if you want to use DaisyUI colors everywhere
+    theme: {
+		extend: {
+		  colors: require('daisyui/colors'),
+		},
+	},
+	daisyui: {
+		styled: true,
+		themes: true,
+		rtl: false,
+	},
 };
