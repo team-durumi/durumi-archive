@@ -4,3 +4,7 @@ title = "팀두루미 저장소"
 
 theme = ["tailwind-durumi"]
 disableKinds = ["taxonomy", "term"]
+
+[build]
+# Used by PurgeCSS
+writeStats = true
