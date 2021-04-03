@@ -2,7 +2,7 @@ baseURL = "https://archive.durumi.io"
 languageCode = "ko-kr"
 title = "팀두루미 저장소"
 
-theme = ["tailwind-durumi"]
+theme = ["tailwind-durumi","tailwind-aa-theme"]
 disableKinds = ["taxonomy", "term"]
 
 [build]
