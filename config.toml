@@ -1,6 +1,6 @@
 baseURL = "https://archive.durumi.io"
 languageCode = "ko-kr"
-title = "팀두루미 저장소"
+title = "팀두루미 보존소"
 
 theme = ["tailwind-durumi","tailwind-aa-theme"]
 disableKinds = ["taxonomy", "term"]
@@ -8,3 +8,38 @@ disableKinds = ["taxonomy", "term"]
 [build]
 # Used by PurgeCSS
 writeStats = true
+
+[menu]
+
+  [[menu.main]]
+  name = "프로젝트"
+  URL = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "원본데이터"
+  URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQVpXGnDO8H-ir-uIW-89ddAvNcQbk3kl7uJOFRcVpaZpSTBWyJdJ0F2N2ObUWyVWFpSj_pcm_qIdTA/pub"
+  weight = 2
+
+
+  [[menu.main]]
+  name = "블로그"
+  URL = "posts"
+  weight = 3
+
+  ############# footer menu #############
+  [[menu.footer]]
+  name = "프로젝트"
+  URL = "/"
+  weight = 1
+
+  [[menu.footer]]
+  name = "원본데이터"
+  URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQVpXGnDO8H-ir-uIW-89ddAvNcQbk3kl7uJOFRcVpaZpSTBWyJdJ0F2N2ObUWyVWFpSj_pcm_qIdTA/pub"
+  weight = 2
+
+
+  [[menu.footer]]
+  name = "블로그"
+  URL = "posts"
+  weight = 3
