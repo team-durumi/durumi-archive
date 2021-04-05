@@ -2,8 +2,8 @@
 
 {{ partial "marketing/hero-left.html" . }}
 {{ partial "marketing/featured-items.html" . }}
-{{ $projects := partial "projects-data.html" . }}
-<!-- <div class="grid grid-cols-3 gap-4">
+<!-- {{ $projects := partial "projects-data.html" . }}
+<div class="grid grid-cols-3 gap-4">
     {{- range $projects -}}{{- if eq .status "1" -}}
     <div class="max-w-xs rounded overflow-hidden shadow-lg my-8">
         <img class="w-full" src="https://dummyimage.com/600x400/C8C7C8/fff" alt="Sunset in the mountains">
