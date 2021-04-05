@@ -21,12 +21,6 @@ writeStats = true
   URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQVpXGnDO8H-ir-uIW-89ddAvNcQbk3kl7uJOFRcVpaZpSTBWyJdJ0F2N2ObUWyVWFpSj_pcm_qIdTA/pub"
   weight = 2
 
-
-  [[menu.main]]
-  name = "블로그"
-  URL = "posts"
-  weight = 3
-
   ############# footer menu #############
   [[menu.footer]]
   name = "프로젝트"
@@ -37,9 +31,3 @@ writeStats = true
   name = "원본데이터"
   URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQVpXGnDO8H-ir-uIW-89ddAvNcQbk3kl7uJOFRcVpaZpSTBWyJdJ0F2N2ObUWyVWFpSj_pcm_qIdTA/pub"
   weight = 2
-
-
-  [[menu.footer]]
-  name = "블로그"
-  URL = "posts"
-  weight = 3
