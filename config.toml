@@ -9,6 +9,9 @@ disableKinds = ["taxonomy", "term"]
 # Used by PurgeCSS
 writeStats = true
 
+[outputs]
+  home = ["html", "json"]
+
 [menu]
 
   [[menu.main]]
