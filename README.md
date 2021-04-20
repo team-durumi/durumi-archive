@@ -20,3 +20,15 @@ git submodule update --init --recursive
 ```bash
 hugo server --disableFastRender
 ```
+
+## 스샷 찍기
+
+```
+sudo apt-get -y install libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb libgbm-dev
+sudo npm -g i puppeteer capture-website-cli
+
+sudo apt-get -y install jq
+curl -s http://localhost:1313/index.json | jq -r '.data[] | .codename'
+curl -s http://localhost:1313/index.json | jq -r '.data[] | .url'
+curl -s http://localhost:1313/index.json | jq -r '.data[] | .codename, .url'
+```
